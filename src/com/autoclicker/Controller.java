@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.awt.event.InputEvent;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -86,6 +87,7 @@ public class Controller extends Application
         });
         primaryStage.setScene(scene);
         primaryStage.show();
+        primaryStage.setOnCloseRequest(e -> System.exit(0));
     }
 
     private GridPane createControlPanel()
