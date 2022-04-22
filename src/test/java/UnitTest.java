@@ -10,4 +10,9 @@ public class UnitTest
    public void testing(){
       assertTrue(true);
    }
+
+   @Test
+   public void testing1(){
+      assertTrue(true);
+   }
 }
